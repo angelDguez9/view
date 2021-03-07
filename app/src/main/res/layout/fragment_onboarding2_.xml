@@ -6,13 +6,21 @@
     android:layout_height="match_parent"
     tools:context=".Onboarding2_Fragment">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
 
     <TextView
-        android:id="@+id/tv_saltar"
+        android:id="@+id/txtSkip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="313dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="14dp"
         android:layout_marginEnd="16dp"
         android:text="@string/Skip"
         android:textColor="@color/TextblueColor"
@@ -24,60 +32,61 @@
         tools:ignore="MissingConstraints" />
 
     <ImageView
-        android:id="@+id/img_ob2"
-        android:layout_width="261sp"
-        android:layout_height="262sp"
+        android:id="@+id/imgOnboarding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="57dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="84dp"
         android:layout_marginEnd="57dp"
         android:src="@drawable/onboarding2_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_saltar"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/txtSkip"
+        tools:ignore="MissingConstraints"
+        android:contentDescription="@string/all" />
 
     <TextView
-        android:id="@+id/tv_inf1_1"
+        android:id="@+id/txtEvent"
         android:layout_width="344sp"
         android:layout_height="75sp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="50dp"
         android:layout_marginEnd="15dp"
-        android:text="No te pierdas ningún evento en vivo"
+        android:text="@string/liveEvents"
         android:textAlignment="center"
         android:textColor="@color/TextblueColor"
         android:textSize="28sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/img_ob2"
+        app:layout_constraintTop_toBottomOf="@+id/imgOnboarding"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/txtEnjoyEvents"
         android:layout_width="360sp"
         android:layout_height="67sp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="7dp"
-        android:text="Disfruta de todos los eventos sin importar donde estés, desde tu aplicación."
+        android:text="@string/enjoyEvents"
         android:textAlignment="center"
         android:textColor="@color/TextdarkColor"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_inf1_1"
+        app:layout_constraintTop_toBottomOf="@+id/txtEvent"
         tools:ignore="MissingConstraints" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/button2"
+        android:id="@+id/btnNext"
         android:layout_width="160sp"
         android:layout_height="48sp"
         android:layout_marginStart="107dp"
         android:layout_marginTop="87dp"
         android:layout_marginEnd="107dp"
         android:layout_marginBottom="52dp"
-        android:text="Siguiente"
+        android:text="@string/next"
         android:textColor="@color/white"
         android:textSize="17sp"
         android:textAlignment="center"
@@ -86,7 +95,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/txtEnjoyEvents" />
 
 
 

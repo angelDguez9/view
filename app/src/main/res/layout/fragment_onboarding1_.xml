@@ -8,7 +8,7 @@
 
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtSkip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="14dp"
@@ -21,51 +21,51 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgOnboarding"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
         android:layout_marginTop="84dp"
         android:layout_marginEnd="50dp"
         android:background="@drawable/onboardingimage"
-        android:contentDescription="TODO"
+        android:contentDescription="@string/all"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/txtSkip" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/txtMaterial"
+        android:layout_width="344sp"
+        android:layout_height="75sp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="53dp"
         android:layout_marginEnd="16dp"
-        android:text="Material exclusivo en \n nuestra biblioteca virtual"
+        android:text="@string/material"
         android:textAlignment="center"
         android:textColor="@color/TextblueColor"
         android:textSize="28sp"
-        android:textStyle="normal|bold"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imgOnboarding" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/txtMultimedia"
+        android:layout_width="344sp"
+        android:layout_height="67sp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="16dp"
-        android:text="Encuentra libros, audios, videos y demás \n material multimedia."
+        android:text="@string/findMaterials"
         android:textAlignment="center"
         android:textColor="@color/TextdarkColor"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/txtMaterial" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btn_next"
+        android:id="@+id/btnNext"
         android:layout_width="160sp"
         android:layout_height="wrap_content"
         android:layout_marginStart="108dp"
@@ -73,12 +73,12 @@
         android:layout_marginEnd="107dp"
         android:layout_marginBottom="50dp"
         android:background="@drawable/custom_button"
-        android:text="Siguiente"
+        android:text="@string/next"
         android:textAllCaps="false"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintTop_toBottomOf="@+id/txtMultimedia" />
 </androidx.constraintlayout.widget.ConstraintLayout>

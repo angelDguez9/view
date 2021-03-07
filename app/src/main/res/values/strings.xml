@@ -3,4 +3,15 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="Skip">Omitir</string>
+    <string name="next">Siguiente</string>
+    <string name="all">TODO</string>
+    <string name="events">Eventos en vivo</string>
+    <string name="liveEvents">No te pierdas ningún evento en vivo</string>
+    <string name="enjoyEvents">Disfruta de todos los eventos sin importar donde estés, desde tu aplicación.</string>
+    <string name="material">Material exclusivo en nuestra biblioteca virtual</string>
+    <string name="findMaterials">Encuentra libros, audios, videos y demás material multimedia.</string>
+    <string name="FindEvent">Buscar evento por nombre o ciudad</string>
+    <string name="MainEvent">Evento destacado</string>
+    <string name="MisaDominical">Misa dominical vespertina</string>
+    <string name="BasilicaGpe">Basílica de Guadalupe</string>
 </resources>

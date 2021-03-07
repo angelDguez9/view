@@ -1,0 +1,165 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FAFAFA"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        tools:context=".Eventos_Fragment">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/toolbar_cornerradius"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginTop="20dp">
+
+                <ImageView
+                    android:id="@+id/imgBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:contentDescription="@string/all"
+                    android:src="@drawable/ic_back"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txtEvents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/events"
+                    android:textAlignment="center"
+                    android:textColor="@color/TextblueColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/imgBack"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+        <EditText
+            android:id="@+id/txtFindEvent"
+            android:layout_width="match_parent"
+            android:layout_height="36sp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_edittext"
+            android:drawableStart="@drawable/ic_help"
+            android:drawableEnd="@drawable/ic_help"
+            android:focusableInTouchMode="true"
+            android:hint="@string/FindEvent"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:paddingStart="5dp"
+            android:paddingEnd="5dp"
+            android:textAlignment="textStart"
+            android:textColor="#3C3C4399"
+            android:textSize="17sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/MainEvents"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:background="@color/white"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.065"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtFindEvent"
+            app:layout_constraintVertical_bias="0.06"
+            tools:ignore="MissingConstraints"
+            android:focusable="true">
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtMainEvent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="8dp"
+                    android:text="@string/MainEvent"
+                    android:textColor="@color/TextblueColor"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/imgChurch"
+                    android:layout_width="match_parent"
+                    android:layout_height="168dp"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="9dp"
+                    android:layout_marginEnd="19dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/guadalupe_misa"
+                    app:shapeAppearance="@style/roudImageView">
+
+                </com.google.android.material.imageview.ShapeableImageView>
+
+
+                <TextView
+                    android:id="@+id/txtBasilicGpe"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:layout_marginTop="9dp"
+                    android:text="@string/BasilicaGpe"
+                    android:textColor="@color/TextblackColor"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/DominicalMisa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="13dp"
+                    android:text="@string/MisaDominical"
+                    android:textColor="@color/TextblackColor"
+                    android:textSize="15sp" />
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/bottom_menu" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
