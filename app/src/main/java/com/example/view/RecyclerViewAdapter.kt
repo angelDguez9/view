@@ -11,14 +11,10 @@ import androidx.recyclerview.widget.RecyclerView
 class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>()  {
 
 
-    private val itemImages1 = intArrayOf(
-        R.drawable.img4,
-        R.drawable.img5,
-        R.drawable.img6
-    )
+
     private val itemtitle= arrayOf("Eventos de tu ciudad","Eventos de tu ciudad","Eventos de tu ciudad")
-    private val itemTitles = arrayOf("Basílica de Guadalupe", "Iglesia San Juan Apóstol","Iglesia del Sagrado Corazón de Jesús")
-    private val itemDetails = arrayOf("Misa dominical vespertina", "Misa dominical vespertina", "Misa dominical vespertina")
+    private val itemTitles = arrayOf("Iglesia San Juan Apóstol", "Iglesia San Pedro","Iglesia del Sagrado Corazón de Jesús")
+    private val itemDay = arrayOf("Misa dominical vespertina", "Misa dominical vespertina", "Misa dominical vespertina")
     private val itemImages = intArrayOf(
         R.drawable.guadalupe,
         R.drawable.fatima,
@@ -30,12 +26,14 @@ class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>
         var textTitle : TextView
         var image : ImageView
         var textdes : TextView
+        var textday : TextView
 
         init {
             textTitle = itemView.findViewById(R.id.item_title)
             image = itemView.findViewById(R.id.item_image)
 
             textdes = itemView.findViewById(R.id.item_details)
+            textday = itemView.findViewById(R.id.item_day)
         }
     }
 
@@ -48,17 +46,14 @@ class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>
 
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        holder.image.setImageResource(itemImages1[position])
-        holder.image.setOnClickListener {v: View ->
-            Toast.makeText(v.context, "Clicked on the item", Toast.LENGTH_SHORT).show()
-        }
+
         holder.textTitle.text = itemtitle[position]
         holder.image.setImageResource(itemImages[position])
         holder.itemView.setOnClickListener {v: View ->
             Toast.makeText(v.context, "Clicked on the item", Toast.LENGTH_SHORT).show()
         }
         holder.textdes.text = itemTitles[position]
-        holder.textdes.text = itemDetails[position]
+        holder.textday.text = itemDay[position]
     }
 
     override fun getItemCount(): Int {
