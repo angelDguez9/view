@@ -12,7 +12,7 @@ class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>
 
 
 
-    private val itemtitle= arrayOf("Eventos de tu ciudad","Eventos de tu ciudad","Eventos de tu ciudad")
+   // private val itemtitle= arrayOf("Eventos de tu ciudad","Eventos de tu ciudad","Eventos de tu ciudad")
     private val itemTitles = arrayOf("Iglesia San Juan Apóstol", "Iglesia San Pedro","Iglesia del Sagrado Corazón de Jesús")
     private val itemDay = arrayOf("Misa dominical vespertina", "Misa dominical vespertina", "Misa dominical vespertina")
     private val itemImages = intArrayOf(
@@ -23,13 +23,13 @@ class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>
 
 
     inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
-        var textTitle : TextView
+       // var textTitle : TextView
         var image : ImageView
         var textdes : TextView
         var textday : TextView
 
         init {
-            textTitle = itemView.findViewById(R.id.item_title)
+           // textTitle = itemView.findViewById(R.id.item_title)
             image = itemView.findViewById(R.id.item_image)
 
             textdes = itemView.findViewById(R.id.item_details)
@@ -47,7 +47,7 @@ class RecyclerViewAdapter : RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
 
-        holder.textTitle.text = itemtitle[position]
+        //holder.textTitle.text = itemtitle[position]
         holder.image.setImageResource(itemImages[position])
         holder.itemView.setOnClickListener {v: View ->
             Toast.makeText(v.context, "Clicked on the item", Toast.LENGTH_SHORT).show()

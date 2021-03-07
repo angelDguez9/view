@@ -148,27 +148,73 @@
         </androidx.cardview.widget.CardView>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
         tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="465dp"
+            android:layout_marginEnd="175dp"
+            android:layout_marginBottom="4dp"
+            android:text="Eventos en tu ciudad"
+            android:textColor="@color/TextblueColor"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/rcv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/rcv"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="465dp"
-            android:layout_marginBottom="1dp"
+            android:layout_marginTop="498dp"
             android:scrollbars="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="640dp"
+            android:layout_marginEnd="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="197sp"
+                android:layout_height="48sp"
+                android:background="@drawable/custom_buttondonate"
+                android:drawableLeft="@drawable/heart"
+                android:text="Apoyar a mi iglesia"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.958"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.928">
+
+            </androidx.appcompat.widget.AppCompatButton>
+        </FrameLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavigationView2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="70sp"
             android:background="@color/white"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
