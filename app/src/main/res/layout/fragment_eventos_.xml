@@ -181,6 +181,23 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/item_title2" />
+
+        <Button
+            android:layout_width="235dp"
+            android:layout_height="45dp"
+            android:background="@drawable/custom_button"
+            android:drawableLeft="@drawable/heart"
+            android:gravity="bottom"
+            android:text="Apoyar a mi iglesia"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/rcv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.943"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/rcv"
+            app:layout_constraintVertical_bias="0.898" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
