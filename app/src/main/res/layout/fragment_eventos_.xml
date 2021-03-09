@@ -128,7 +128,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentBottom="false"
-                    android:layout_marginStart="303dp"
+                    android:layout_marginStart="280sp"
                     android:layout_marginTop="25sp"
                     android:layout_marginEnd="35sp"
                     android:layout_marginBottom="80dp"
