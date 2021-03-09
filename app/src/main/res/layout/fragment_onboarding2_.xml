@@ -7,6 +7,7 @@
     tools:context=".Onboarding2_Fragment">
 
     <ImageView
+        android:id="@+id/imgBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="18dp"
@@ -16,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent"></ImageView>
 
     <TextView
-        android:id="@+id/txtSkip"
+        android:id="@+id/txtSkip1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="313dp"
@@ -41,7 +42,7 @@
         android:src="@drawable/onboarding2_image"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtSkip"
+        app:layout_constraintTop_toBottomOf="@+id/txtSkip1"
         tools:ignore="MissingConstraints"
         android:contentDescription="@string/all" />
 

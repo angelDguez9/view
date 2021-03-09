@@ -3,29 +3,32 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_nav"
-    app:startDestination="@id/onboarding1_Fragment">
+    app:startDestination="@id/splash_Fragment">
 
-    <fragment
-        android:id="@+id/onboarding1_Fragment"
-        android:name="com.example.view.Onboarding1_Fragment"
-        android:label="fragment_onboarding1_"
-        tools:layout="@layout/fragment_onboarding1_" >
-        <action
-            android:id="@+id/action_onboarding1_Fragment_to_onboarding2_Fragment"
-            app:destination="@id/onboarding2_Fragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/onboarding2_Fragment"
-        android:name="com.example.view.Onboarding2_Fragment"
-        android:label="fragment_onboarding2_"
-        tools:layout="@layout/fragment_onboarding2_" >
-        <action
-            android:id="@+id/action_onboarding2_Fragment_to_eventos_Fragment"
-            app:destination="@id/eventos_Fragment" />
-    </fragment>
     <fragment
         android:id="@+id/eventos_Fragment"
         android:name="com.example.view.Eventos_Fragment"
         android:label="fragment_eventos_"
         tools:layout="@layout/fragment_eventos_" />
+    <fragment
+        android:id="@+id/splash_Fragment"
+        android:name="com.example.view.Splash_Fragment"
+        android:label="fragment_splash_"
+        tools:layout="@layout/fragment_splash_" >
+        <action
+            android:id="@+id/action_splash_Fragment_to_viewPageAdapter_Fragment"
+            app:destination="@id/viewPageAdapter_Fragment" />
+        <action
+            android:id="@+id/action_splash_Fragment_to_eventos_Fragment"
+            app:destination="@id/eventos_Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPageAdapter_Fragment"
+        android:name="com.example.view.ViewPageAdapter_Fragment"
+        android:label="fragment_view_page_adapter_"
+        tools:layout="@layout/fragment_view_page_adapter_" >
+        <action
+            android:id="@+id/action_viewPageAdapter_Fragment_to_eventos_Fragment"
+            app:destination="@id/eventos_Fragment" />
+    </fragment>
 </navigation>
