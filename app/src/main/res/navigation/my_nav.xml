@@ -7,12 +7,12 @@
 
     <fragment
         android:id="@+id/eventos_Fragment"
-        android:name="com.example.view.Eventos_Fragment"
+        android:name="com.example.view.fragments.Eventos_Fragment"
         android:label="fragment_eventos_"
         tools:layout="@layout/fragment_eventos_" />
     <fragment
         android:id="@+id/splash_Fragment"
-        android:name="com.example.view.Splash_Fragment"
+        android:name="com.example.view.fragments.Splash_Fragment"
         android:label="fragment_splash_"
         tools:layout="@layout/fragment_splash_" >
         <action
@@ -24,7 +24,7 @@
     </fragment>
     <fragment
         android:id="@+id/viewPageAdapter_Fragment"
-        android:name="com.example.view.ViewPageAdapter_Fragment"
+        android:name="com.example.view.fragments.ViewPageAdapter_Fragment"
         android:label="fragment_view_page_adapter_"
         tools:layout="@layout/fragment_view_page_adapter_" >
         <action

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#1C75BC"
-    tools:context=".Splash_Fragment">
+    tools:context=".fragments.Splash_Fragment">
 
     <ImageView
         android:id="@+id/imageView"

@@ -1,4 +1,4 @@
-package com.example.view
+package com.example.view.fragments
 
 import android.content.Context
 import android.os.Bundle
@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.example.view.R
 
 
 class Splash_Fragment : Fragment() {
@@ -21,7 +22,7 @@ class Splash_Fragment : Fragment() {
             }else {
                 findNavController().navigate(R.id.action_splash_Fragment_to_viewPageAdapter_Fragment)
             }
-        },3000)
+        },2000)
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_splash_, container, false)
     }

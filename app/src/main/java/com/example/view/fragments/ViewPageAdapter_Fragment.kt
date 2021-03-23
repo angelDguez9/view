@@ -1,10 +1,12 @@
-package com.example.view
+package com.example.view.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.example.view.R
+import com.example.view.adapter.ViewPageAdapter
 import kotlinx.android.synthetic.main.fragment_view_page_adapter_.view.*
 
 class ViewPageAdapter_Fragment : Fragment() {

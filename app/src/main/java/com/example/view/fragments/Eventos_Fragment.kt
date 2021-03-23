@@ -1,4 +1,4 @@
-package com.example.view
+package com.example.view.fragments
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,7 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import kotlinx.android.synthetic.main.fragment_eventos_.*
+import com.example.view.R
 
 class Eventos_Fragment : Fragment() {
 
@@ -25,7 +25,7 @@ class Eventos_Fragment : Fragment() {
         layoutManager = LinearLayoutManager(activity, LinearLayoutManager.HORIZONTAL,false)
         recyclerView.layoutManager = layoutManager
 
-        adapter = RecyclerViewAdapter ()
+        adapter = RecyclerViewAdapter()
         recyclerView.adapter = adapter
         return  view
     }
